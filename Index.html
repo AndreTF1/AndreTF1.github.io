@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria de Imagens Interativa</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-align: center;
+            background-color: rgba(210, 210, 210, 0.7);
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            margin-top: 50px; /* Espaçamento do topo da página */
+            margin-bottom: 60px; /* Espaçamento abaixo da imagem */
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            color:rgba(141, 5, 5, 0.7)
+        }
+        
+        .banner-container {
+            position: relative;
+            width: 100%;
+            max-width: 1200px; /* Ajuste conforme necessário */
+            margin: 0 auto;
+            margin-bottom: 60px;
+        }
+        .banner-image1, .banner-image {
+            position: absolute; /* Faz com que a imagem fique sobre as outras */
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%); /* Centraliza a imagem */
+        }
+        
+        .banner-image1 {
+            width: 1310px;
+            height: 10px;
+            top: 10px;
+            
+        }
+        .banner-image {
+            width: 330px;
+            height: 100px;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .gallery-item {
+            position: relative;
+            display: flex;
+            align-items: center;
+            width: calc(50% - 20px); /* Ajusta a largura para dois itens por linha, considerando o gap */
+            box-sizing: border-box;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+            background-color: #ffffff;
+            padding: 10px;
+        }
+        .gallery-item img {
+            width: 255px;
+            height: 190px;
+            border-radius: 5px;
+            
+        }
+        .gallery-item .text-box {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 235px;
+            height: 20px;
+            background: rgba(141, 5, 5, 0.7);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+        .gallery-item .description {
+            padding-left: 20px;
+            text-align: left;
+            color: #333;
+            font-size: 1em;
+            box-sizing: border-box;
+            max-width: 100%;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="banner-container">
+            <img src="img/Imagem2.png" alt="Imagem Banner" class="banner-image1">
+            <img src="img/Imagem1.png" alt="Imagem Banner" class="banner-image">
+        </div>
+
+        <h1>OPORTUNIDADES DE LOCAÇÃO - RR IMÓVEIS</h1>
+
+        <div class="gallery">
+            <div class="gallery-item">
+                <div class="text-box">Jardins de Monet - RRCOD6799</div>
+                <a href="https://drive.google.com/drive/folders/16JlTtA_-68BXdiZQeoihsf2NJgk55X8N?usp=sharing" target="blank">
+                    <img src="img/6799.jpg" alt="Imagem 1">
+                </a>
+                <div class="description">
+                    82m² 3 dorms 2 vagas<p></p> Locação: R$ 7.500,00<p></p>
+                    Condomínio: R$ 900,00<p></p>
+                    Garantia Locatícia: Aceita Caução<p></p>
+                    Aceita Pet: Não
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <div class="text-box">Parque Barueri - RRCOD6792</div>
+                <a href="https://drive.google.com/drive/folders/13XEEQCFtU_b6A1fwMEfmu4ElbgpGLIgi?usp=sharing" target="blank">
+                    <img src="img/6792.jpg" alt="Imagem 1">
+                </a>
+                <div class="description">
+                    85m² 3 dorms 2 vagas<p></p> Locação: R$ 4.800,00<p></p>
+                    Condomínio: R$ 815,00<p></p>
+                    Garantia Locatícia: Caução e Seguro Fiança<p></p>
+                    Aceita Pet: Sim
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <div class="text-box">Play Barueri - RRCOD6789</div>
+                <a href="https://drive.google.com/drive/folders/1KaRmYKI18YlHyriRO0GEyWw3yL443Ifq?usp=sharing" target="blank">
+                    <img src="img/6789.jpg" alt="Imagem 1">
+                </a>
+                <div class="description">
+                    60m² 2 dorms 1 vaga<p></p> Locação: R$ 3.100,00<p></p>
+                    Condomínio: R$ 577,00<p></p>
+                    Garantia Locatícia: Caução e Seguro Fiança<p></p>
+                    Aceita Pet: Sim
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <div class="text-box">Vision Bethaville - RRCOD6785</div>
+                <a href="https://drive.google.com/drive/folders/13Xa11qMSZ-Nde1ycNsgk3Yf6byZZ9i27?usp=sharing" target="blank">
+                    <img src="img/6785.jpg" alt="Imagem 1">
+                </a>
+                <div class="description">
+                    60m² 2 dorms 1 vaga<p></p> Locação: R$ 3.000,00<p></p>
+                    Condomínio: R$ 578,00<p></p>
+                    Garantia Locatícia: Caução e Seguro Fiança<p></p>
+                    Aceita Pet: Sim
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <div class="text-box">Inspire (Verde) - RRCOD6767</div>
+                <a href="https://drive.google.com/drive/folders/1B1yk6BqIABUqbmHckHwnPN2llVHeAecC?usp=sharing" target="blank">
+                    <img src="img/6767.jpg" alt="Imagem 1">
+                </a>
+                <div class="description">
+                    51m² 2 dorms 1 vaga<p></p> Pacote Locação: R$ 2.600,00<p></p>
+                    Garantia Locatícia: 3 Cauções e Seguro Fiança<p></p>
+                    Aceita Pet: Sim
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <div class="text-box">Inspire (Flores) - RRCOD6716</div>
+                <a href="https://drive.google.com/drive/folders/1Kqo0hHpoXb8hTpM8KOx57D00HscB5PwZ?usp=sharing" target="blank">
+                    <img src="img/6716.jpg" alt="Imagem 1">
+                </a>
+                <div class="description">
+                    66m² 3 dorms 1 vaga<p></p>Locação: R$ 3.500,00<p></p>
+                    Condomínio: R$ 800,00<p></p>
+                    Garantia Locatícia: Caução e Seguro Fiança<p></p>
+                    Aceita Pet: Sim
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <div class="text-box">Reserva do Alto - RRCOD6710</div>
+                <a href="https://drive.google.com/drive/folders/1OBf2j_hn2b8LRy0zMuXO3hcO7zvCWqPZ?usp=sharing" target="blank">
+                    <img src="img/6710.jpg" alt="Imagem 1">
+                </a>
+                <div class="description">
+                    68m² 2 dorms 1 vaga<p></p>Locação: R$ 3.800,00<p></p>
+                    Condomínio: R$ 600,00<p></p>
+                    Garantia Locatícia: Caução e Seguro Fiança<p></p>
+                    Aceita Pet: Sim
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <div class="text-box">Vista Bella - RRCOD6700</div>
+                <a href="https://drive.google.com/drive/folders/1PdXeBBhGquk8ZkO5aR6RDc_Ym5LOcz5O?usp=sharing" target="blank">
+                    <img src="img/6700.jpg" alt="Imagem 1">
+                </a>
+                <div class="description">
+                    55m² 2 dorms 1 vaga<p></p>Locação: R$ 2.200,00<p></p>
+                    Condomínio: R$ 600,00<p></p>
+                    Garantia Locatícia: Caução e Seguro Fiança<p></p>
+                    Aceita Pet: Pequeno porte
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <div class="text-box">Inspire (Verde) - RRCOD6596</div>
+                <a href="https://drive.google.com/drive/folders/130JZxhV3Huxh5G0J0FahcVzmPvSrlmeE?usp=sharing" target="blank">
+                    <img src="img/6596.jpg" alt="Imagem 1">
+                </a>
+                <div class="description">
+                    51m² 2 dorms 1 vaga<p></p>Locação: R$ 2.500,00<p></p>
+                    Condomínio: R$ 400,00<p></p>
+                    Garantia Locatícia: Caução e Seguro Fiança<p></p>
+                    Aceita Pet: Sim
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <div class="text-box">Parque Barueri - RRCOD6455</div>
+                <a href="https://drive.google.com/drive/folders/1ER-ywhlWF-sOEfsXazq6liVImSbLQ-QG?usp=sharing" target="blank">
+                    <img src="img/6455.jpg" alt="Imagem 1">
+                </a>
+                <div class="description">
+                    85m² 3 dorms 1 vaga<p></p>Locação: R$ 3.840,00<p></p>
+                    Condomínio: R$ 670,00<p></p>
+                    Garantia Locatícia: Caução e Seguro Fiança<p></p>
+                    Aceita Pet: Sim
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <div class="text-box">Inspire (Flores) - RRCOD6006</div>
+                <a href="https://drive.google.com/drive/folders/1SZmaHqO6YGlsKgElQ2FYYJzdLcsEQsWD?usp=sharing" target="blank">
+                    <img src="img/6006.jpg" alt="Imagem 1">
+                </a>
+                <div class="description">
+                    51m² 2 dorms 1 vaga<p></p>Pacote Locação: R$ 2.600,00<p></p>
+                    Garantia Locatícia: Caução e Seguro Fiança<p></p>
+                    Aceita Pet: Sim
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <div class="text-box">Alphaview - RRCOD5987</div>
+                <a href="https://drive.google.com/drive/folders/19RG5Cfl0L06QowHujo4ZrgfQHuVhbFm8?usp=sharing" target="blank">
+                    <img src="img/5987.jpg" alt="Imagem 1">
+                </a>
+                <div class="description">
+                    61m² 2 dorms 1 vaga<p></p>Locação: R$ 3.500,00<p></p>
+                    Locação: R$ 500,00<p></p>
+                    Garantia Locatícia: Aceita Caução <p></p>
+                    Aceita Pet: Pequeno porte
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <div class="text-box">Ápice Park - RRCOD5447</div>
+                <a href="https://drive.google.com/drive/folders/1qPHuV5O69i9UWCu3IiahG8mfLNWsT9uw?usp=sharing" target="blank">
+                    <img src="img/5447.jpg" alt="Imagem 1">
+                </a>
+                <div class="description">
+                    52m² 2 dorms 1 vaga<p></p>Locação: R$ 3.680,00<p></p>
+                    Condomínio: R$ 420,00<p></p>
+                    Garantia Locatícia: Caução e Seguro Fiança <p></p>
+                    Aceita Pet: Pequeno porte
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.querySelectorAll('.gallery-item img').forEach(img => {
+            img.addEventListener('mouseover', () => {
+                img.style.opacity = '0.7';
+            });
+
+            img.addEventListener('mouseout', () => {
+                img.style.opacity = '1';
+            });
+        });
+    </script>
+</body>
+</html>
