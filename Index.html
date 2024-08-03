@@ -14,10 +14,12 @@
             background-color: rgba(210, 210, 210, 0.7);
         }
         .container {
-            width: 90%;
-            max-width: 1200px;
+            width: 80%;
             margin: 0 auto;
             padding: 20px;
+            margin-top: 50px; /* Espaçamento do topo da página */
+            margin-bottom: 60px; /* Espaçamento abaixo da imagem */
+
         }
         h1 {
             font-size: 2.5em;
@@ -31,15 +33,21 @@
             margin-bottom: 60px;
         }
         .banner-image1, .banner-image {
-            display: block;
-            width: 100%;
-            height: auto;
-            max-width: 1200px; /* Ajuste o tamanho máximo conforme necessário */
-            margin: 0 auto;
+            position: absolute; /* Faz com que a imagem fique sobre as outras */
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%); /* Centraliza a imagem */
         }
         .banner-image1 {
-            margin-bottom: 10px; /* Espaço entre as imagens do banner */
+            width: 1310px;
+            height: 10px;
+            top: 10px;
         }
+        .banner-image {
+            width: 330px;
+            height: 100px;
+        }
+
         .gallery {
             display: flex;
             flex-wrap: wrap;
