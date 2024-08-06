@@ -93,10 +93,12 @@
         /* Media Queries para melhorar a responsividade */
         @media (max-width: 768px) {
             .gallery-item {
-                width: calc(100% - 20px); /* Ajusta a largura para um item por linha em telas menores */
+                width: calc(50% - 10px); /* Ajusta a largura para dois itens por linha em telas menores */
             }
-            .banner-image1, .banner-image {
-                max-width: 100%;
+        }
+        @media (max-width: 480px) {
+            .gallery-item {
+                width: calc(100% - 10px); /* Ajusta a largura para um item por linha em telas muito pequenas */
             }
         }
     </style>
